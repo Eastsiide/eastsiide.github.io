@@ -1,0 +1,100 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: white;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; 
+    font-weight: bold;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    color: #D4AF37; /* Gold shade from logo */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+/* Tagline Styling */
+.tagline {
+    text-align: center;
+    font-size: 1.2em;
+    color: #D4AF37; /* Gold shade */
+    font-weight: bold;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item h2 {
+    font-size: 1.1em;
+    color: #D4AF37; /* Gold shade */
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: black;
+}
+
+.product-item .price {
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer-content {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding: 10px 0;
+    border-top: 1px solid #E0E0E0;
+}
